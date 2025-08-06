@@ -104,7 +104,7 @@ const TerritoryViewPage: React.FC = () => {
 
   if (!territory) {
     return (
-      <div className="flex flex-col items-center justify-center min-h-screen">
+      <div className="flex flex-col items-center justify-center min-h-[--doc-height]">
         <p>Territorio no encontrado.</p>
         <button onClick={() => navigate('/')} className="mt-4 px-4 py-2 rounded-md bg-indigo-600 text-white">Volver a la lista</button>
       </div>
@@ -186,7 +186,7 @@ const TerritoryViewPage: React.FC = () => {
   );
 
   return (
-    <div className="bg-slate-100 min-h-screen">
+    <div className="bg-slate-100 min-h-[--doc-height]">
       {/* <Header 
         title={<>Territorio <span className="font-extrabold">{territory.number}</span></>} 
         showBackButton 

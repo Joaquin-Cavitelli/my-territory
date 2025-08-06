@@ -169,7 +169,7 @@ const StreetViewPage: React.FC = () => {
 
   if (!territory || !street) {
     return (
-      <div className="flex flex-col items-center justify-center min-h-screen">
+      <div className="flex flex-col items-center justify-center min-h-[--doc-height]">
         <p>Calle o territorio no encontrado.</p>
         <button onClick={() => navigate('/')} className="mt-4 px-4 py-2 rounded-md bg-indigo-600 text-white">Volver a la lista</button>
       </div>
@@ -195,7 +195,7 @@ const StreetViewPage: React.FC = () => {
   };
 
   return (
-    <div className="bg-slate-100 min-h-screen">
+    <div className="bg-slate-100 min-h-[--doc-height]">
       
        <div className="flex p-4 items-center ">
       <button onClick={() => navigate(`/territory/${territoryId}`)} className="p-2 rounded-full text-slate-700 " aria-label="Volver">

@@ -10,6 +10,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
     <style>
+      :root {
+        --doc-height: 100vh;
+      }
       *{
         font-family:  'Montserrat', sans-serif; 
       }
@@ -29,6 +32,19 @@
         background: #555;
       }
     </style>
+    <script>
+      // This script sets a CSS custom property to the actual inner height of the window.
+      // This is used to fix the 100vh issue on mobile browsers where the browser UI can
+      // cause an overflow and a scrollbar.
+      function setDocHeight() {
+        document.documentElement.style.setProperty('--doc-height', `${window.innerHeight}px`);
+      }
+      // We run it on resize and orientation change.
+      window.addEventListener('resize', setDocHeight);
+      window.addEventListener('orientationchange', setDocHeight);
+      // We also run it once on load.
+      setDocHeight();
+    </script>
   <script type="importmap">
 {
   "imports": {

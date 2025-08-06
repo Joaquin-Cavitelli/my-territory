@@ -139,7 +139,7 @@ const VisitHistoryPage: React.FC = () => {
 
     if (!territory) {
         return (
-            <div className="bg-slate-100 min-h-screen">
+            <div className="bg-slate-100 min-h-[--doc-height]">
                 <Header title="Error" showBackButton backTo="/" />
                 <main className="p-4 text-center">
                      <p>Territorio no encontrado.</p>
@@ -149,7 +149,7 @@ const VisitHistoryPage: React.FC = () => {
     }
 
     return (
-        <div className="bg-slate-100 min-h-screen">
+        <div className="bg-slate-100 min-h-[--doc-height]">
             {/* <Header 
                 title={<>Historial - T. {territory.number}</>}
                 showBackButton

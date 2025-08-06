@@ -8,7 +8,7 @@ import VisitHistoryPage from './pages/VisitHistoryPage';
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-[--doc-height]">
       <Routes>
         <Route path="/" element={<TerritoryListPage />} />
         <Route path="/territory/:territoryId" element={<TerritoryViewPage />} />
