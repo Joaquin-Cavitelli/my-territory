@@ -1,0 +1,6 @@
+{
+  "name": "Registro de Visitas 2.0",
+  "description": "Una aplicación web para registrar visitas a territorios, calles y casas. Funciona completamente offline utilizando el almacenamiento local del navegador, ideal para trabajo de campo.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
