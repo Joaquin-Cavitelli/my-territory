@@ -139,7 +139,7 @@ const VisitHistoryPage: React.FC = () => {
 
     if (!territory) {
         return (
-            <div className="bg-slate-100 min-h-[--doc-height]">
+            <div className="bg-slate-100 min-h-[--doc-height] pb-24">
                 <Header title="Error" showBackButton backTo="/" />
                 <main className="p-4 text-center">
                      <p>Territorio no encontrado.</p>
@@ -166,7 +166,7 @@ const VisitHistoryPage: React.FC = () => {
        
       </div>
             <main className="p-4 container mx-auto">
-                <div className="bg-white p-3 rounded-lg shadow-md mb-4 flex  gap-4 justify-between items-center sticky top-[65px] z-10">
+                <div className="bg-white p-3 rounded-lg shadow-md mb-4 flex  gap-4 justify-between items-center">
                     <div className="flex flex-col gap-2">
                          <label htmlFor="filter-status" className="text-xs font-medium text-slate-600">Filtrar:</label>
                          <select 

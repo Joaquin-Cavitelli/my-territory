@@ -195,7 +195,7 @@ const StreetViewPage: React.FC = () => {
   };
 
   return (
-    <div className="bg-slate-100 min-h-[--doc-height]">
+    <div className="bg-slate-100 min-h-[--doc-height] mb-24">
       
        <div className="flex p-4 items-center ">
       <button onClick={() => navigate(`/territory/${territoryId}`)} className="p-2 rounded-full text-slate-700 " aria-label="Volver">

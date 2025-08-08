@@ -186,7 +186,7 @@ const TerritoryViewPage: React.FC = () => {
   );
 
   return (
-    <div className="bg-slate-100 min-h-[--doc-height]">
+    <div className="bg-slate-100 min-h-[--doc-height] pb-24">
       {/* <Header 
         title={<>Territorio <span className="font-extrabold">{territory.number}</span></>} 
         showBackButton 
